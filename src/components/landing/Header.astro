@@ -1,0 +1,63 @@
+---
+import logo from '../../assets/img/logo-pc.png';
+import Button from '../Button.astro';
+---
+
+<header>
+  
+  <nav class="bg-gray-700 relative flex flex-wrap items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img width="50" src={logo.src} alt="">
+      <span class="text-stone-100 text-2xl font-semibold">Alexander Soto.</span>
+    </div>
+ 
+    <!-- Botón hamburguesa -->
+    <button id="menu-toggle" class="block md:hidden text-white focus:outline-none text-3xl">
+      ☰
+    </button>
+
+    <!-- Menú de navegación -->
+    <div id="menu" class="w-full flex md:flex md:items-center md:w-auto hidden flex-col md:flex-row gap-9 mt-4 md:mt-0">
+      <button class="text-gray-400 text-2xl hover:text-sky-500 font-semibold" data-section="inicio">Inicio</button>
+      <button class="scroll-link text-gray-400 text-2xl hover:text-sky-500 font-semibold" data-section="inicio">Inicio</button>
+      <button class="scroll-link text-gray-400 text-2xl hover:text-sky-500 font-semibold" data-section="estudios">Estudios</button>
+      <button class="scroll-link text-gray-400 text-2xl hover:text-sky-500 font-semibold" data-section="habilidades">Habilidades</button>
+      <button class="bg-sky-200 text-sky-500 text-2xl font-semibold px-5 py-2 rounded-2xl shadow-md hover:scale-105 hover:shadow-2xl hover:rotate-1 transition-all duration-500"><a href="https://www.linkedin.com/in/luis-alexander-soto-segovia-548322307/"><i class="fa-brands fa-linkedin"></i> Linkedin</a></button>
+      <button class="scroll-link bg-sky-500 text-white text-center text-2xl font-semibold px-5 py-2 rounded-2xl shadow-md transition-all duration-300 ease-in-out transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-1" data-section="contactos">Contacto</button>
+    </div>
+  </nav>
+
+  <!-- Script para abrir/cerrar el menú -->
+  <script type="module">
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <script type="module">
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+  
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    // Scroll suave
+    const scrollLinks = document.querySelectorAll('.scroll-link');
+    scrollLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const targetId = link.getAttribute('data-section');
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          menu.classList.add('hidden'); // Cierra menú en móvil
+        }
+      });
+    });
+  </script>
+  
+</header>
+

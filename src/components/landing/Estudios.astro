@@ -1,0 +1,58 @@
+---
+import logoUTC from '../../assets/img/logo-utc.webp'
+import logoIdiomas from '../../assets/img/logo-idiomas.png'
+import logoJPII from '../../assets/img/logo-jpii.png'
+
+import CertificadoFlutter from '../../assets/certificados/DS-FLUTTER-1-0010.pdf'
+import CertificadoMantenimiento from '../../assets/certificados/UTC_EC_CIYA_2021-003-267   CERTIFICADO CURSO.pdf'
+---
+
+<div class="studios bg-sky-700 p-5 mt-10 rounded-xl">
+    <h1 class="text-5xl md:text-7xl text-gray-200 text-center font-bold p-5">Estudios</h1>
+    
+    <div class="flex flex-col gap-4 justify-center md:flex-row md:justify-between">
+        <div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-700">
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Egresado Universidad Técnica de Cotopaxi <strong class="text-sky-300">2020-2025</strong></h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Soy Ingeniero en Sistemas de Información y durante mis estudios adquirí conocimientos sólidos en diversas tecnologías y metodologías de trabajo, los cuales aplico actualmente de manera efectiva en proyectos de desarrollo.</p>
+                <a href="https://www.utc.edu.ec/"><img class="w-20 rounded-full" src={logoUTC.src} alt="Universidad Técnica de Cotopaxi"></a>
+            </div>
+        </div>
+
+        <div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-700">
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Certificado Idioma Inglés B1 UTC <strong class="text-sky-300">2022-2024</strong></h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Certifico que poseo un nivel intermedio de inglés (B1). Este nivel me permite comprender y producir textos sencillos, comunicarme eficazmente en situaciones cotidianas .</p>
+                <a href="http://www.utc.edu.ec/idiomas"><img class="w-20 rounded-full" src={logoIdiomas.src} alt="Universidad Técnica de Cotopaxi"></a>
+            </div>
+        </div>
+
+        <div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-700">
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Unidad Educativa Juan Pablo II <strong class="text-sky-300">2007-2020</strong></h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Soy Bachiller en Ciencias, graduado en la ciudad de Quito. Los conocimientos adquiridos durante mi formación fueron fundamentales para lograr mi ingreso a la educación superior.</p>
+                <a href="https://uejp2.edu.ec/"><img class="w-20 rounded-full" src={logoJPII.src} alt="Universidad Técnica de Cotopaxi"></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <h1 class="text-5xl md:text-7xl text-gray-200 text-center font-bold p-5">Certificados</h1>
+    
+    <div class="flex flex-col gap-5 md:gap-28 justify-center md:flex-row md:justify-center">
+        <div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-700">
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desarrollo de Aplicaciones con Flutter <strong class="text-sky-300">2024</strong></h5>
+                <iframe src={CertificadoFlutter} class="w-full h-96"></iframe>
+            </div>
+        </div>
+
+        <div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-700">
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mantenimiento PC: Hardware y Software<strong class="text-sky-300">2021</strong></h5>
+                <iframe src={CertificadoMantenimiento} class="w-full h-96"></iframe>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+---
+interface Props {
+  url?: string;
+  title?: string;
+  content?: string;
+  boton:string;
+}
+
+const { url, title, content, boton } = Astro.props;
+---
+
+<div class="flex items-center gap-4 p-6 border border-gray-200 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 shadow-sm w-full max-w-md">
+  {url && (
+    <img
+      src={url}
+      
+      alt={title ?? "Contacto"}
+      class="w-12 h-12 rounded-full object-cover"
+    />
+  )}
+  <div class="flex flex-col">
+    <span class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wide">{title}</span>
+    <span class="text-base font-medium text-gray-800 dark:text-white break-all">{content}</span>
+    <a href={boton} target="_blank" rel="noopener noreferrer">
+        <button class="bg-sky-900 rounded-xl hover:border-2 border-sky-500 w-28 p-3 mt-3 text-white">
+          Contactar
+        </button>
+      </a>
+  </div>
+</div>
