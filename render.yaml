@@ -1,9 +1,7 @@
 services:
   - type: web
     name: astro-site
-    env: node
+    env: static
     buildCommand: npm install && npm run build
-    startCommand: npm run preview -- --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: NODE_VERSION
-        value: 18.14.0
+    staticPublishPath: ./dist
+    # No es necesario el startCommand para sitios estáticos
