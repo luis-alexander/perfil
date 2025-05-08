@@ -3,7 +3,7 @@ services:
     name: astro-site
     env: node
     buildCommand: npm install && npm run build
-    startCommand: node ./dist/server/entry.mjs
+    startCommand: npm run preview -- --host 0.0.0.0 --port $PORT
     envVars:
       - key: NODE_VERSION
         value: 18.14.0
