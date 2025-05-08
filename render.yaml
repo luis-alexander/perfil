@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: astro-site
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node ./dist/server/entry.mjs
+    envVars:
+      - key: NODE_VERSION
+        value: 18.14.0
