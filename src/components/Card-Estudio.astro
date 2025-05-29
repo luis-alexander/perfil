@@ -1,0 +1,25 @@
+---
+//Datos para cada componente 
+interface Props{
+    school?: string;
+    date?: string;
+    image?: string;
+    grade?: string;
+}
+
+//Extraemos el dato title y content de la respuesta y si no ahy, que muestre por defecto los valores 
+const {school, date , image, grade} = Astro.props 
+---
+
+
+<div class=" text-white flex flex-col items-center gap-4 p-4 rounded-xl shadow-lg">
+    <div class="flex flex-row gap-4">
+        <div class="flex flex-col items-center justify-center"><i class="fa-solid fa-caret-right text-3xl"></i></div>
+        <img class="w-28 rounded-full" src={image} alt={school}>
+    <div class="flex flex-col w-96 items-center justify-center">
+        <h1 class="text-1xl font-bold">{school}</h1>
+        <p class="text-gray-400">{grade}</p>
+        <p class="text-gray-200">{date}</p>
+    </div>
+    </div>
+</div>

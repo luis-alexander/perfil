@@ -1,0 +1,33 @@
+{
+    "projects": [
+        {
+            "title": "Landing Page - Metálicas Oriental",
+            "description": "Esta página ha sido diseñada con el propósito de exhibir, con claridad y profesionalismo los proyectos, servicios y productos que ofrece Metálicas Oriental, una empresa comprometida con la excelencia en la fabricación y comercialización de soluciones metálicas. El objetivo es brindar una experiencia visual atractiva y un acceso fácil a la propuesta de valor, permitiendo conocer de cerca la calidad y el compromiso de la entidad.",
+            "image": "/img/proyectos/metalicas_oriental.png",
+            "link":"https://metalicas-oriental-landingpage.onrender.com",
+            "tecnologias": "Astro - HTML - CSS - Tailwind - JavaScript - Git - GitHub - Render"
+        },
+        {
+            "title": "Sistema privado (no público)",
+            "description": "Sistema de recolección de datos desarrollado con Django y Python, integrando Flutter y FlutterFlow para interfaces móviles. Usa PostgreSQL y SQLite, con procesamiento ETL, diseño en Figma, funcionalidades PWA y visualización con ChartJS. Implementa Scikit-Learn, tecnologías web (HTML, CSS, JavaScript, Bootstrap) y gestión en GitHub/GitLab, con despliegue en Heroku y organización en Trello bajo metodología XP.",
+            "image": "/img/proyectos/naranjo.jpg",
+            "link":"#",
+            "tecnologias": "Python - Django - Flutter - Dart - HTML - CSS - Js - Git - GitHub - GitLab - SQLite - PostgreSQL - Figma - Whimsical - MVC - XP"
+        },
+        {
+            "title": "Api Rest con Django Rest Framework",
+            "description": "Realización de API para realizar diferentes peticiones (POST-GET-PUT-DELETE) y despliegue en Render de forma gratuita",
+            "image": "/img/proyectos/api.jpg",
+            "link":"https://drf-prueba-simple-rcaq.onrender.com/api/projects/",
+            "tecnologias": "Python - Django - Django Rest Framework"
+        },
+        {
+            "title": "Landing Page Perfil",
+            "description": "Realizacion de página web como perfil profesional para dar a conocer estudios, habilidades, experiencia y contactos del usuario",
+            "image": "/img/proyectos/perfil.png",
+            "link":"https://luis-alexander.onrender.com",
+            "tecnologias": "Astro - HTML - CSS - Tailwind - JavaScript - Git - GitHub - Render"
+        }
+        
+    ]
+} 

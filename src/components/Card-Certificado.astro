@@ -1,0 +1,19 @@
+---
+//Datos para cada componente 
+interface Props{
+    certificado?: string;
+    title?: string;
+    date? :string;
+}
+
+//Extraemos el dato title y content de la respuesta y si no ahy, que muestre por defecto los valores 
+const {certificado, title,date} = Astro.props 
+---
+
+
+<div class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-700">
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title} <strong class="text-green-200">{date}</strong></h5>
+        <iframe src={certificado} class="w-full h-96"></iframe>
+    </div>
+</div>

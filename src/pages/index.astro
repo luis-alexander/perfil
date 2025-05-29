@@ -1,7 +1,7 @@
 ---
-import Contactos from '../components/landing/Contactos.astro';
 import Estudios from '../components/landing/Estudios.astro';
 import Inicio from '../components/landing/Inicio.astro';
+import Portafolio from '../components/landing/Portafolio.astro';
 import Skills from '../components/landing/Skills.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
@@ -16,15 +16,17 @@ import '../styles/global.css'
 	<section id="inicio">
 		<Inicio />
 	</section>
+	<section id="skills">
+		<Skills/>
+	</section>
+	<section id="portafolio">
+		<Portafolio/>
+	</section>
 	<section id="estudios">
 		<Estudios/>
 	</section>
-	<section id="habilidades">
-		<Skills/>
-	</section>
-	<section id="contactos">
-		<Contactos/>
-	</section>
+	
+	
 	
 </Layout>
 

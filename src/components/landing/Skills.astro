@@ -1,45 +1,41 @@
 ---
 import CardSkill from "../Card-skill.astro";
 ---
-<div>
-    <h1 class="text-5xl md:text-7xl text-gray-200 text-center font-bold pt-10">Habilidades</h1>
-    <p class="text-gray-300 text-xl p-5 md:text-2xl text-justify md:text-justify mt-6 leading-relaxed">
-        A continuación, se muestra las herramientas con las que he trabajado, aunque aún deseo seguir aprendiendo más sobre ellas, gracias a estas he logrado desarrollar mi proyecto de titulación y comprender el funcionamiento de sitios, sistemas y aplicaciones web.
-      </p>
-</div>
-<h1 class="text-2xl md:text-3xl text-gray-200 font-bold p-5">He trabajado con: </h1>
-<div class="flex flex-col md:flex-row justify-center content-center">
-    {/* Backend */}
-        <div class="flex flex-col">
-        
-        <CardSkill skill="Python" imagen="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" />
-        <CardSkill skill="Django" imagen="https://console.kamatera.com/assets/images/os/os_django.png" />
-        <CardSkill skill="Java" imagen="https://images.sftcdn.net/images/t_app-icon-m/p/2f4c04f4-96d0-11e6-9830-00163ed833e7/3163796423/java-runtime-environment-logo.png" />
-        <CardSkill skill="CodeIgniter" imagen="http://gedelumbung.com/wp-content/uploads/2010/10/codeigniter-lg.gif" />
-        <CardSkill skill=".NET - C#" imagen="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" />
-        <CardSkill skill="SQL" imagen="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/271130163/original/d54a288e0b98d3a23657ca62f8d7af9540f505f5/make-your-sql-queries.png" />
+<div class="bg-black px-5">
+    <div class="flex flex-row justify-center items-center gap-4">
+        <hr class="bg-white w-full h-1 ">
+        <h1 class="text-3xl md:text-5xl text-white text-center font-bold pt-10">Habilidades</h1>
+    </div>
+    <div class=" w-full flex flex-col md:flex-row justify-center items-start gap-6 p-6 rounded-lg">
+        <!-- Backend -->
+        <div class="flex flex-col gap-4">
+            <h3 class="text-white text-lg font-semibold text-center">Backend</h3>
+            <CardSkill skill="Python" icono="https://tse4.mm.bing.net/th/id/OIP.Fbk3IPxDf4wtNkoMlNBySgHaEK?rs=1&pid=ImgDetMain" />
+            <CardSkill skill="Django" icono="https://console.kamatera.com/assets/images/os/os_django.png" />
+            <CardSkill skill="CodeIgniter" icono="http://gedelumbung.com/wp-content/uploads/2010/10/codeigniter-lg.gif" />
+            <CardSkill skill=".NET - C#" icono="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" />
+            <CardSkill skill="SQL" icono="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/271130163/original/d54a288e0b98d3a23657ca62f8d7af9540f505f5/make-your-sql-queries.png" />
         </div>
 
-    {/* Frontend */}
-        <div class="flex flex-col">
-        
-        <CardSkill skill="HTML" imagen="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" />
-        <CardSkill skill="CSS" imagen="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" />
-        <CardSkill skill="JavaScript" imagen="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" />
-        <CardSkill skill="Flutter" imagen="https://images.ctfassets.net/23aumh6u8s0i/4TsG2mTRrLFhlQ9G1m19sC/4c9f98d56165a0bdd71cbe7b9c2e2484/flutter" />
-        <CardSkill skill="React" imagen="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" />
-        <CardSkill skill="Angular" imagen="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" />
-        <CardSkill skill="Astro" imagen="https://cdn.worldvectorlogo.com/logos/astrojs.svg" />
+        <!-- Frontend -->
+        <div class="flex flex-col gap-4">
+            <h3 class="text-white text-lg font-semibold text-center">Frontend</h3>
+            <CardSkill skill="CSS" icono="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" />
+            <CardSkill skill="JavaScript" icono="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" />
+            <CardSkill skill="Flutter" icono="https://images.ctfassets.net/23aumh6u8s0i/4TsG2mTRrLFhlQ9G1m19sC/4c9f98d56165a0bdd71cbe7b9c2e2484/flutter" />
+            <CardSkill skill="React" icono="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" />
+            <CardSkill skill="Astro" icono="https://cdn.worldvectorlogo.com/logos/astrojs.svg" />
         </div>
-
-    {/* Otras habilidades */}
-        <div class="flex flex-col">
-        
-        <CardSkill skill="Mantenimiento de equipos" imagen="https://png.pngtree.com/png-clipart/20241229/original/pngtree-computer-settings-icon-png-image_18249653.png" />
-        <CardSkill skill="Infraestructura – Redes" imagen="https://static.vecteezy.com/system/resources/previews/005/034/601/non_2x/network-infrastructure-icon-design-vector.jpg" />
-        <CardSkill skill="Excel – Power BI" imagen="https://bertia.es/wp-content/uploads/2022/07/Imatges-blog-11-thegem-blog-default.png" />
-        <CardSkill skill="Git - GitHub – GitLab" imagen="https://miro.medium.com/v2/resize:fit:886/1*V7YRq9DWDfffVII6KrM8Fw.jpeg" />
-        <CardSkill skill="Metodologías Ágiles" imagen="https://media.istockphoto.com/id/1470350238/es/vector/desarrollador-de-software-que-trabaja-con-ordenadores.jpg?s=612x612&w=0&k=20&c=2W-Jrc5_y9zfeACclgo9OAMnyHvOOVWGzsfd94tOJc0=" />
-        <CardSkill skill="Análsis de Datos" imagen="https://comisariopantera.mx/wp-content/uploads/datos.png" />
-        </div>
+        <!-- Otras habilidades -->
+        <div class="flex flex-col gap-4">
+            <h3 class="text-white text-lg font-semibold text-center">Otras</h3>
+            <CardSkill skill="Mantenimiento de equipos" icono="https://png.pngtree.com/png-clipart/20241229/original/pngtree-computer-settings-icon-png-image_18249653.png" />
+            <CardSkill skill="Infraestructura – Redes" icono="https://static.vecteezy.com/system/resources/previews/005/034/601/non_2x/network-infrastructure-icon-design-vector.jpg" />
+            <CardSkill skill="Excel – Power BI" icono="https://bertia.es/wp-content/uploads/2022/07/Imatges-blog-11-thegem-blog-default.png" />
+            <CardSkill skill="Git - GitHub – GitLab" icono="https://miro.medium.com/v2/resize:fit:886/1*V7YRq9DWDfffVII6KrM8Fw.jpeg" />
+            <CardSkill skill="Metodologías Ágiles" icono="https://media.istockphoto.com/id/1470350238/es/vector/desarrollador-de-software-que-trabaja-con-ordenadores.jpg?s=612x612&w=0&k=20&c=2W-Jrc5_y9zfeACclgo9OAMnyHvOOVWGzsfd94tOJc0=" />
+            <!-- <CardSkill skill="Análisis de Datos" icono="https://comisariopantera.mx/wp-content/uploads/datos.png" /> -->
+        </div>      
+    </div>
+    <p class="text-white text-center p-5">Me puedo quedar horas buscando e intentando soluciones hasta resolver un problema</p>
 </div>
