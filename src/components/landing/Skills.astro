@@ -1,49 +1,50 @@
 ---
 import CardSkill from "../Card-skill.astro";
 ---
+
 <div class="bg-black">
     <div class="flex flex-row justify-center items-center gap-4">
-        <hr class="bg-white w-full h-1 ">
+        <hr class="bg-white w-full h-1" data-aos="fade-right">
         <h1 class="text-3xl md:text-5xl text-white text-center font-bold pt-10 px-5">Habilidades</h1>
     </div>
     <div class=" w-full flex flex-col md:flex-row justify-center items-center md:items-start gap-6 p-6 rounded-lg">
         <!-- Backend -->
         <div class="flex flex-col gap-4">
-            <h3 class="text-white text-lg font-semibold text-center">Backend</h3>
-            <CardSkill skill="Python" icono="https://tse4.mm.bing.net/th/id/OIP.Fbk3IPxDf4wtNkoMlNBySgHaEK?rs=1&pid=ImgDetMain" />
-            <CardSkill skill="Django" icono="https://console.kamatera.com/assets/images/os/os_django.png" />
-            <CardSkill skill="CodeIgniter" icono="http://gedelumbung.com/wp-content/uploads/2010/10/codeigniter-lg.gif" />
-            <CardSkill skill=".NET - C#" icono="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" />
-            <CardSkill skill="SQL" icono="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/271130163/original/d54a288e0b98d3a23657ca62f8d7af9540f505f5/make-your-sql-queries.png" />
+            <h3 class="text-white text-lg font-semibold text-center" data-aos="fade-down-right">Backend</h3>
+            <CardSkill skill="Python" data_aos="fade-right" icono="https://tse4.mm.bing.net/th/id/OIP.Fbk3IPxDf4wtNkoMlNBySgHaEK?rs=1&pid=ImgDetMain" />
+            <CardSkill skill="Django" data_aos="fade-right" icono="https://console.kamatera.com/assets/images/os/os_django.png" />
+            <CardSkill skill="CodeIgniter" data_aos="fade-right" icono="http://gedelumbung.com/wp-content/uploads/2010/10/codeigniter-lg.gif" />
+            <CardSkill skill=".NET - C#" data_aos="fade-right" icono="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" />
+            <CardSkill skill="SQL" data_aos="fade-right" icono="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/271130163/original/d54a288e0b98d3a23657ca62f8d7af9540f505f5/make-your-sql-queries.png" />
         </div>
 
         <!-- Frontend -->
         <div class="flex flex-col gap-4">
-            <h3 class="text-white text-lg font-semibold text-center">Frontend</h3>
-            <CardSkill skill="CSS" icono="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" />
-            <CardSkill skill="JavaScript" icono="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" />
-            <CardSkill skill="Flutter" icono="https://images.ctfassets.net/23aumh6u8s0i/4TsG2mTRrLFhlQ9G1m19sC/4c9f98d56165a0bdd71cbe7b9c2e2484/flutter" />
-            <CardSkill skill="React" icono="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" />
-            <CardSkill skill="Astro" icono="https://cdn.worldvectorlogo.com/logos/astrojs.svg" />
+            <h3 class="text-white text-lg font-semibold text-center" data-aos="zoom-out-down">Frontend</h3>
+            <CardSkill skill="CSS" data_aos="zoom-in-up" icono="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" />
+            <CardSkill skill="JavaScript" data_aos="zoom-in-up" icono="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" />
+            <CardSkill skill="Flutter" data_aos="zoom-in-up" icono="https://images.ctfassets.net/23aumh6u8s0i/4TsG2mTRrLFhlQ9G1m19sC/4c9f98d56165a0bdd71cbe7b9c2e2484/flutter" />
+            <CardSkill skill="React" data_aos="zoom-in-up" icono="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" />
+            <CardSkill skill="Astro" data_aos="zoom-in-up" icono="https://cdn.worldvectorlogo.com/logos/astrojs.svg" />
         </div>
         <!-- Otras habilidades -->
         <div class="flex flex-col gap-4">
-            <h3 class="text-white text-lg font-semibold text-center">Otras</h3>
-            <CardSkill skill="Mantenimiento de equipos" icono="https://png.pngtree.com/png-clipart/20241229/original/pngtree-computer-settings-icon-png-image_18249653.png" />
-            <CardSkill skill="Infraestructura – Redes" icono="https://static.vecteezy.com/system/resources/previews/005/034/601/non_2x/network-infrastructure-icon-design-vector.jpg" />
-            <CardSkill skill="Excel – Power BI" icono="https://bertia.es/wp-content/uploads/2022/07/Imatges-blog-11-thegem-blog-default.png" />
-            <CardSkill skill="Git - GitHub – GitLab" icono="https://miro.medium.com/v2/resize:fit:886/1*V7YRq9DWDfffVII6KrM8Fw.jpeg" />
-            <CardSkill skill="Metodologías Ágiles" icono="https://media.istockphoto.com/id/1470350238/es/vector/desarrollador-de-software-que-trabaja-con-ordenadores.jpg?s=612x612&w=0&k=20&c=2W-Jrc5_y9zfeACclgo9OAMnyHvOOVWGzsfd94tOJc0=" />
+            <h3 class="text-white text-lg font-semibold text-center" data-aos="zoom-out-down">Otras</h3>
+            <CardSkill skill="Mantenimiento de equipos" data_aos="zoom-in-up" icono="https://png.pngtree.com/png-clipart/20241229/original/pngtree-computer-settings-icon-png-image_18249653.png" />
+            <CardSkill skill="Infraestructura – Redes" data_aos="zoom-in-up" icono="https://static.vecteezy.com/system/resources/previews/005/034/601/non_2x/network-infrastructure-icon-design-vector.jpg" />
+            <CardSkill skill="Excel – Power BI" data_aos="zoom-in-up" icono="https://bertia.es/wp-content/uploads/2022/07/Imatges-blog-11-thegem-blog-default.png" />
+            <CardSkill skill="Git - GitHub – GitLab" data_aos="zoom-in-up" icono="https://miro.medium.com/v2/resize:fit:886/1*V7YRq9DWDfffVII6KrM8Fw.jpeg" />
+            <CardSkill skill="Metodologías Ágiles" data_aos="zoom-in-up" icono="https://media.istockphoto.com/id/1470350238/es/vector/desarrollador-de-software-que-trabaja-con-ordenadores.jpg?s=612x612&w=0&k=20&c=2W-Jrc5_y9zfeACclgo9OAMnyHvOOVWGzsfd94tOJc0=" />
             <!-- <CardSkill skill="Análisis de Datos" icono="https://comisariopantera.mx/wp-content/uploads/datos.png" /> -->
         </div>
         <!-- Ciberseguridad-->
         <div class="flex flex-col gap-4">
-            <h3 class="text-white text-lg font-semibold text-center">Ciberseguridad</h3>
-            <CardSkill skill="CrowdStrike" icono="https://th.bing.com/th/id/OIP.NMsq8U3OkGU-3M6RbuZSgAHaE4?w=268&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" />
-            <CardSkill skill="Adlumin" icono="https://th.bing.com/th/id/R.7f7a8d08d8d2cb70204876898cc227a2?rik=B%2bHBWlpS0h5lrg&pid=ImgRaw&r=0" />
-            <CardSkill skill="SocRadar" icono="https://www.atptech.com/wp-content/uploads/socradar-1536x978.png" />
-            <CardSkill skill="Dark Trace" icono="https://th.bing.com/th/id/ODF.ZM3MYlsZLEB71pjJMfzQTw?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" />
-            <CardSkill skill="NOC - Viewtisight" icono="https://tse4.mm.bing.net/th/id/OIP.n4EKfbsHUFLvIrBmTJbDrAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" />
+            <h3 class="text-white text-lg font-semibold text-center" data-aos="fade-down-left">Ciberseguridad</h3>
+            <CardSkill skill="CrowdStrike" data_aos="fade-left" icono="https://th.bing.com/th/id/OIP.NMsq8U3OkGU-3M6RbuZSgAHaE4?w=268&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" />
+            <CardSkill skill="Adlumin" data_aos="fade-left" icono="https://th.bing.com/th/id/R.7f7a8d08d8d2cb70204876898cc227a2?rik=B%2bHBWlpS0h5lrg&pid=ImgRaw&r=0" />
+            <CardSkill skill="SocRadar" data_aos="fade-left" icono="https://www.atptech.com/wp-content/uploads/socradar-1536x978.png" />
+            <CardSkill skill="Dark Trace" data_aos="fade-left" icono="https://th.bing.com/th/id/ODF.ZM3MYlsZLEB71pjJMfzQTw?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" />
+            <CardSkill skill="NOC - Viewtisight" data_aos="fade-left" icono="https://tse4.mm.bing.net/th/id/OIP.n4EKfbsHUFLvIrBmTJbDrAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" />
         </div> 
     </div>
     <p class="text-white text-center p-5">Me puedo quedar horas buscando e intentando soluciones hasta resolver un problema</p>

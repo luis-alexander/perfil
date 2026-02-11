@@ -13,20 +13,20 @@ import CardCertificado from "../Card-Certificado.astro";
 <div class="bg-black px-5 py-10">
     <div class="flex flex-row justify-center items-center gap-4">
         <h1 class="text-3xl md:text-5xl text-white text-center font-bold pt-10">Estudios</h1>
-        <hr class="bg-white w-full h-1 ">
+        <hr class="bg-white w-full h-1" data-aos="flip-left">
     </div>
-    <div>
+    <div data-aos="fade-right">
         <CardEstudio school='Universidad Técnica de Cotopaxi' date='2020 - 2025' grade='Ingeniero en Sistemas de Informacion' image={logoUTC.src}/>
         <CardEstudio school='Universidad Técnica de Cotopaxi' date='2022 - 2024' grade='Nivel de Inglés B1' image={logoIdiomas.src}/>
         <CardEstudio school='Unidad Educativa Juan Pablo II' date='2007 - 2020' grade='Bachiller en Ciencias' image={logoJPII.src}/>
     </div>
     
     <div class="flex flex-row justify-center items-center gap-4 p-4">
-        <hr class="bg-white w-full h-1 ">
+        <hr class="bg-white w-full h-1 " data-aos="flip-left">
         <h1 class="text-3xl md:text-5xl text-white text-center font-bold pt-10">Certificados</h1>
         
     </div>
-    <div class="flex flex-col gap-5 md:gap-28 justify-center md:flex-row md:justify-center">
+    <div class="flex flex-col gap-5 md:gap-28 justify-center md:flex-row md:justify-center" data-aos="fade-left">
         <CardCertificado title='Desarrollo de Aplicaciones con Flutter ' date='2024' certificado={CertificadoFlutter}/>
         <CardCertificado title='Mantenimiento PC: Hardware y Software' date='2024' certificado={CertificadoMantenimiento}/>
         <CardCertificado title='Power BI Datos - Nivel Básico' date='2025' certificado={CertificadoPbBasico}/>

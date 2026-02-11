@@ -9,5 +9,7 @@
 body {
   font-family: 'Playpen Sans Arabic', sans-serif;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 

@@ -1,19 +1,24 @@
 ---
+import { string } from 'astro:schema';
+
 //Datos para cada componente 
 interface Props{
     skill?: string;
     icono?: string;
+    data_aos?: string;
 }
 
 //Extraemos el dato title y content de la respuesta y si no ahy, que muestre por defecto los valores 
-const {skill, icono = "icon"} = Astro.props 
+const {skill,data_aos, icono = "icon"} = Astro.props 
 ---
 
-
-<div class="bg-white text-black flex items-center gap-4 p-4 rounded-xl shadow-lg hover:translate-y-2 duration-300">
-    <img class="w-12 h-12 rounded-full border border-gray-700" src={icono} alt={skill}>
-    <p class="text-lg font-medium tracking-wide">{skill}</p>
+<div data-aos={data_aos} >
+    <div class="bg-white text-black flex items-center gap-4 p-4 rounded-xl shadow-lg hover:translate-y-2 duration-300" >
+        <img class="w-12 h-12 rounded-full border border-gray-700" src={icono} alt={skill}>
+        <p class="text-lg font-medium tracking-wide">{skill}</p>
+    </div>
 </div>
+
 
 
 

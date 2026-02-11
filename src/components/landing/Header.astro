@@ -1,17 +1,26 @@
 ---
 import logo from '../../assets/img/logo-pc.png';
 import Button from '../Button.astro';
+import AOS from "aos";
+import "aos/dist/aos.css";
 ---
 
 <header>
   <nav>
-    <div class="text-sm flex flex-row gap-1 py-5">
-      <Button title='Skills' link='#Skills'></Button>
+    <div class="text-sm flex flex-row gap-1 py-5" data-aos="flip-left">
+      <Button title='Skills'></Button>
       <Button title='Portafolio' link='#Portafolio'></Button>
       <Button title='Estudios' link='#Estudios'></Button>
     </div>
   </nav>
 </header>
+
+
+<script>
+  // Importar AOS
+  import AOS from "aos";
+  AOS.init({ duration: 1000, once: false });
+</script>
 
 <script>
   // Script para un scroll mucho más suave
