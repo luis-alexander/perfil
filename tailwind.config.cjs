@@ -6,3 +6,9 @@ module.exports = {
     },
     plugins: [],
 }
+export default {
+    content: ["./src/**/*.{astro,html,js,ts,jsx,tsx}"],
+    safelist: ["opacity-100", "translate-y-0", "opacity-0", "translate-y-10"],
+    theme: { extend: {} },
+    plugins: [],
+}
